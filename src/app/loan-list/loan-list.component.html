@@ -1,0 +1,24 @@
+<h5 class="card-header">Loan Applicant List</h5>
+<div class="container col">
+    <div class="row">
+      <div class="col-md-2" style="border:0.1cm solid black;">User Name</div>
+      <div class="col-md-2" style="border:0.1cm solid black;">Address</div>
+      <div class="col-md-2" style="border:0.1cm solid black;">Email</div>
+      <div class="col-md-2" style="border:0.1cm solid black;">Start Date</div>
+      <div class="col-md-1" style="border:0.1cm solid black;">End Date</div>
+      <div class="col-md-1" style="border:0.1cm solid black;">Loan Ammount</div>
+      <div class="col-md-1" style="border:0.1cm solid black;">EMI</div>
+      <div class="col-md-1" style="border:0.1cm solid black;">Loan Type</div>
+    </div>
+  
+    <div class="row" *ngFor="let user of loanList">
+      <div class="col-md-2" style="border:0.1em solid black;">{{user.name}}</div>
+      <div class="col-md-2" style="border:0.1em solid black;">{{user.address}}</div>
+      <div class="col-md-2" style="border:0.1em solid black;">{{user.userEmail}}</div>
+      <div class="col-md-2" style="border:0.1em solid black;">{{user.startDate}}</div>
+      <div class="col-md-1" style="border:0.1em solid black;">{{user.endDate}}</div>
+      <div class="col-md-1" style="border:0.1em solid black;">{{user.ammount}}</div>
+      <div class="col-md-1" style="border:0.1em solid black;">{{user.emi}}</div>
+      <div class="col-md-1" style="border:0.1em solid black;">{{user.type}}</div>
+    </div>
+  </div>
